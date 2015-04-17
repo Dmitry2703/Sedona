@@ -1,0 +1,201 @@
+/*
+		Helper classes
+*/
+
+.cl:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*
+		Grid
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.page-wrapper {
+	outline: 3px dashed black;
+	background-color: #bbb;
+	width: 100%;
+	min-width: 768px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.intro {
+	width: 100%;
+	height: 508px;
+	background: #fff url(../img/bg-index.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.main-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-navigation li {
+	outline: 1px solid green;
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.features-banner-description {
+	outline: 1px solid green;
+	float: left;
+	width: 33.33%;
+	min-height: 256px;
+}
+
+.features-banner-image img {
+	float: left;
+	width: 66.66%;
+}
+
+.features-item {
+	outline: 1px solid red;
+	float: left;
+	width: 33.33%;
+	min-height: 256px;
+}
+
+.features-item-illustrated { min-height: 330px; }
+
+.map  {
+	height: 593px;
+	background: #ccdda9 url(../img/_temp/map.jpg) center center no-repeat;
+	-webkit-background-size: auto 593px;
+	background-size: auto 593px;
+}
+
+.footer-instagram, 
+.footer-social,
+.footer-copyright {
+	outline: 1px solid yellow;
+	float: left;
+	width: 33.33%;
+	min-height: 120px;
+}
+
+/* Контейнер главного контента для страницы с отелями */
+
+.container {
+	outline: 2px dashed #222;
+	background-color: #ddd;
+	width: 91.93%;
+	min-width: 705px;
+	max-width: 1047px;
+	margin: 0 auto;
+}
+
+.filter-column1 { 
+	outline: 1px dashed blue;
+	float: left;
+	width: 470px; 
+}
+
+.filter-column2 { 
+	outline: 1px dashed green;
+	float: right;
+	width: 31.77%; 
+}
+
+.filter-fieldset { float: left; }
+
+.hotel-card {
+	outline: 2px dashed orange;
+	position: relative;
+	min-height: 90px;
+	padding-left: 166px;
+	padding-right: 150px;
+}
+
+.hotel-info {
+	outline: 1px dashed green;
+}
+
+.hotel-rating {
+	outline: 1px dashed blue;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 140px;
+}
+
+.hotel-info img { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+/*
+		Fonts
+*/
+
+body {
+	font-family: "Verdana", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.text-nav {
+	font-weight: bold;
+	line-height: 26px;
+	color: #000;
+}
+
+.text-light {
+	color: #fff;
+}
+
+.text-search {
+	line-height: 24px;
+}
+
+.title {
+	font-family: "Verdana", sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.title-light {
+	color: #fff;
+}
+
+.title-big {
+	font-size: 30px;
+}
+
+.title-muted {
+	font-size: 14px;
+	color: #333;
+}
+
+.filter-column-title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.sorting-text {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000;
+}
+
+.bg-muted {
+	color: #666;
+}
