@@ -1,5 +1,5 @@
 /*
-		Helper classes
+		HELPER CLASSES
 */
 
 .cl:after {
@@ -9,30 +9,29 @@
 }
 
 /*
-		Grid
+		GRID
 */
 
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #f2f2f2;
 }
 
 .page-wrapper {
 	outline: 3px dashed black;
-	background-color: #bbb;
+	background-color: #fff;
 	width: 100%;
 	min-width: 768px;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-.intro {
-	width: 100%;
-	height: 508px;
-	background: #fff url(../img/bg-index.jpg) center center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
+/*
+	BASE
+*/
+
+/* Main navigation */
 
 .main-navigation {
 	margin: 0;
@@ -41,10 +40,66 @@ body {
 }
 
 .main-navigation li {
-	outline: 1px solid green;
 	float: left;
 	width: 20%;
 	text-align: center;
+}
+
+.main-navigation a {
+	font-weight: bold;
+	line-height: 56px;
+	color: #000;
+	text-decoration: none;
+}
+
+.main-navigation a:hover { color: #81b3d2; }
+
+.main-navigation a:active { color: #ccc; }
+
+.active a { color: #766357; }
+
+.active a:hover { color: #604e43; }
+
+.active a:active { color: #dbd8d5; }
+
+a.logo {
+	position: relative;
+	z-index: 10;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* Intro (background + text) */
+
+.intro {
+	position: relative;
+	top: -20px;
+	width: 100%;
+	height: 508px;
+	padding-top: 77px;
+	background: #fff url(../img/bg-index.jpg) center center no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.intro img {
+	display: block;
+	margin: 0 auto;
+}
+
+.intro img:first-child { margin-bottom: 54px; }
+
+.intro img:nth-child(2) { margin-bottom: 58px; }
+
+.intro-mask {
+	outline: 2px dotted green;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	min-height: 36px;
+	max-height: 57px;
+	background: url(../img/bg-mask.png) center center no-repeat;
 }
 
 .features-banner-description {
@@ -70,7 +125,7 @@ body {
 
 .map  {
 	height: 593px;
-	background: #ccdda9 url(../img/_temp/map.jpg) center center no-repeat;
+	background: #ccdda9 url(../img/temp/map.jpg) center center no-repeat;
 	-webkit-background-size: auto 593px;
 	background-size: auto 593px;
 }
@@ -141,17 +196,12 @@ body {
 */
 
 body {
-	font-family: "Verdana", sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: normal;
 	color: #333;
 	text-transform: uppercase;
-}
-
-.text-nav {
-	font-weight: bold;
-	line-height: 26px;
-	color: #000;
 }
 
 .text-light {
