@@ -31,7 +31,7 @@
 					<form action="/" method="post">
 						<div class="filter-column1">
 							<fieldset class="filter-fieldset">
-								<legend class="filter-column-title">Инфраструктура:</legend>
+								<legend class="title-small title-light">Инфраструктура:</legend>
 								<input id="checkbox-item1" type="checkbox" name="checkbox-item1" checked>
 								<label class="text-light" for="checkbox-item1">Бассейн</label><br>
 								<input id="checkbox-item2" type="checkbox" name="checkbox-item2">
@@ -40,7 +40,7 @@
 								<label class="text-light" for="checkbox-item3">Wi-Fi</label>
 							</fieldset>
 							<fieldset class="filter-fieldset">
-								<legend class="filter-column-title">Тип жилья:</legend>
+								<legend class="title-small title-light">Тип жилья:</legend>
 								<input id="checkbox-item4" type="checkbox" name="checkbox-item4" checked>
 								<label class="text-light" for="checkbox-item4">Гостиница</label><br>
 								<input id="checkbox-item5" type="checkbox" name="checkbox-item5" checked>
@@ -51,15 +51,16 @@
 						</div>
 						<div class="filter-column2">
 							<fieldset>
-								<legend class="filter-column-title">Стоимость в сутки (р):</legend>
-								<!-- фильтр по цене -->
+								<legend class="title-small title-light">Стоимость в сутки (р):</legend>
 								<div class="range-filter">
-	            		<div class="price-controls">
-	                	от <input class="min-price" type="text" value="0">
-	                	до <input class="max-price" type="text" value="3000">
+	            		<div class="price-controls cl">
+	                	<input class="min-price" type="text" placeholder="от 0">
+	                	<input class="max-price" type="text" placeholder="до 3000">
 	            		</div>
 	            		<div class="range-controls">
-	                	<div class="scale"></div>
+	                	<div class="scale">
+	                		<div class="bar"></div>
+	                	</div>
 	                	<div class="toggle min-toggle"></div>
 	                	<div class="toggle max-toggle"></div>
 	            		</div>
@@ -131,17 +132,17 @@
 		</main>
 		
 		<footer class="page-footer cl">
-			<div class="footer-instagram">
-				<a href="#">#visitsedona</a>
+			<div class="footer-container footer-instagram">
+				<a class="title" href="#">#visitsedona</a>
 			</div>
-			<div class="footer-social">
-				<a class="social-icon" href="#"><i class="icon icon-twitter">Twitter</i></a>
-				<a class="social-icon" href="#"><i class="icon icon-facebook">Facebook</i></a>
-				<a class="social-icon" href="#"><i class="icon icon-youtube">Youtube</i></a>
+			<div class="footer-container footer-social">
+				<a class="social-icon" href="#"><i class="icon-twitter"></i></a>
+				<a class="social-icon" href="#"><i class="icon-facebook"></i></a>
+				<a class="social-icon" href="#"><i class="icon-youtube"></i></a>
 			</div>
-			<div class="footer-copyright">
-				<p>website by</p>
-				<a class="footer-logo" href="#"><img src="http://placehold.it/135x33" width="135" height="33" alt="HTML Academy"></a>
+			<div class="footer-container footer-copyright">
+				<span class="text-dark">website by</span>
+				<a class="footer-logo" href="#"></a>
 			</div>
 		</footer>
 		
