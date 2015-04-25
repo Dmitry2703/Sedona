@@ -9,13 +9,13 @@
 </head>
 <body>
 	<div class="page-wrapper">
-		<header class="page-header">
+		<header>
 				<nav>
 					<ul class="main-navigation cl">
 						<li class="active"><a href="#">Информация</a></li>
 						<li><a href="#">Фото и видео</a></li>
-						<li>
-							<a class="logo" href="index.html">
+						<li class="logo-wrapper">
+							<a href="index.html">
 								<img src="img/logo.png" width="138" height="70" alt="Sedona">
 							</a>
 						</li>
@@ -25,7 +25,7 @@
 				</nav>
 		</header>
 		
-		<main class="main-content">
+		<main>
 			<div class="intro"> <!-- фоновое изображение -->
 			<!-- три текстовых надписи (картинки из макета) -->
 				<img src="img/intro-title1.png" width="256" height="86" alt="Welcome to the gorgeous">
@@ -36,10 +36,10 @@
 			<div class="title text-banner">СЕДОНА — небольшой городок в Аризоне,<br>заслуживающий большего!</div>
 			<section class="features">
 				<h2 class="title-muted">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</h2>
-				<div class="features-banner">
+				<div class="features-banner cl">
 					<div class="features-banner-description">
 						<h3 class="title title-light">Настоящий<br>городок</h3>
-						<span class="features-counter features-counter-light">№1</span>
+						<span class="features-counter features-counter-light text-light">№1</span>
 						<p class="text-light">Седона не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
 					<div class="features-banner-image">
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 					
-				<div class="features-row">
+				<div class="features-row cl">
 					<div class="features-item features-item-illustrated">
 						<div class="features-item-image features-item-image1"></div>
 						<h3 class="title">Жилье</h3>
@@ -65,84 +65,87 @@
 					</div>
 				</div>
 					
-				<div class="features-banner">
+				<div class="features-banner cl">
 					<div class="features-banner-image">
 						<img src="img/temp/content-photo2.jpg" width="800" height="256" alt="Sedona">
 					</div>
 					<div class="features-banner-description">
 						<h3 class="title title-light">Там есть<br>мост дьявола</h3>
-						<span class="features-counter features-counter-light">№2</span>
+						<span class="features-counter features-counter-light text-light">№2</span>
 						<p class="text-light">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
 				</div>
 					
-				<div class="features-row">
+				<div class="features-row cl">
 					<div class="features-item">
-						<h3 class="title">Небольшая площадь</h3>
+						<h3 class="title">Небольшая<br>площадь</h3>
 						<span class="features-counter">№3</span>
-						<p>Все достопримечательности находятся очень близко</p>
+						<p>Все достопримеча-<br>тельности находятся очень близко</p>
 					</div>
 					<div class="features-item">
-						<h3 class="title">Красивая дорога</h3>
+						<h3 class="title">Красивая<br>дорога</h3>
 						<span class="features-counter">№4</span>
 						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 					</div>
 					<div class="features-item">
-						<h3 class="title">Мало туристов</h3>
+						<h3 class="title">Мало<br>туристов</h3>
 						<span class="features-counter">№5</span>
-						<p>Большинство едут в Гранд Каньон и толпятся там</p>
+						<p>Большинство едет в Гранд Каньон и толпятся там</p>
 					</div>
 				</div>
 			</section>
 				
 			<div class="search">
 				<div class="title title-big">Заинтересовались?</div>
-				<p class="text-search">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<a class="btn-search" href="#">Поиск гостиницы в Седоне</a>
+				<p class="text-high">Укажите предполагаемые даты поездки<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<a class="btn btn-search" href="#">Поиск гостиницы в Седоне</a>
 				<!-- Форма поиска -->
 				<div class="search-form">
-					<form action="" method="post">
-						<label for="date-arrival">Дата заезда</label>
-						<input id="date-arrival" type="text" name="date-arrival">
-						<i class="icon icon-calendar"></i>
-						<label for="date-departure">Дата выезда</label>
-						<input id="date-departure" type="text" name="date-departure">
-						<i class="icon icon-calendar"></i>
-						<div class="search-form-counter">
-							<label for="amount-adult">Взрослые:</label>
-							<button type="button"><i class="icon icon-minus">-</i></button>
-							<input id="amount-adult" type="text" name="amount-adult">
-							<button type="button"><i class="icon icon-plus">+</i></button>
+					<form action="/" method="post">
+						<div class="search-form-date pull-right">
+							<label class="text-bold text-dark" for="date-arrival">Дата заезда:</label>
+							<input id="date-arrival" type="text" name="date-arrival" placeholder="24 апреля 2014">
+							<button type="button" class="icon-calendar"></button>
 						</div>
-						<div class="search-form-counter">
-							<label for="amount-children">Дети:</label>
-							<button type="button"><i class="icon icon-minus">-</i></button>
-							<input id="amount-children" type="text" name="amount-children">
-							<button type="button"><i class="icon icon-plus">+</i></button>
+						<div class="search-form-date pull-right">
+							<label class="text-bold text-dark" for="date-departure">Дата выезда:</label>
+							<input id="date-departure" type="text" name="date-departure" placeholder="4 июля 2014">
+							<button type="button" class="icon-calendar"></button>
 						</div>
-						<button class="btn-search btn-search-action" type="submit">Найти</button>
+						<div class="search-form-counter search-form-counter1">
+							<label class="text-bold text-dark" for="amount-adult">Взрослые:</label>
+							<button type="button" class="icon-minus"></button>
+							<input id="amount-adult" type="text" name="amount-adult" placeholder="2">
+							<button type="button" class="icon-plus"></button>
+						</div>
+						<div class="search-form-counter search-form-counter2 pull-right">
+							<label class="text-bold text-dark" for="amount-children">Дети:</label>
+							<button type="button" class="icon-minus"></button>
+							<input id="amount-children" type="text" name="amount-children" placeholder="0">
+							<button type="button" class="icon-plus"></button>
+						</div>
+						<button class="btn btn-search-action" type="submit">Найти</button>
 					</form>
 				</div>
 				<div class="map"></div>
 			</div>
 		</main>
 		
-		<footer class="page-footer cl">
-			<div class="footer-instagram">
-				<a href="#">#visitsedona</a>
+		<footer class="page-footer page-footer-transparent cl">
+			<div class="footer-container footer-instagram">
+				<a class="title" href="#">#visitsedona</a>
 			</div>
-			<div class="footer-social">
-				<a class="social-icon" href="#"><i class="icon icon-twitter">Twitter</i></a>
-				<a class="social-icon" href="#"><i class="icon icon-facebook">Facebook</i></a>
-				<a class="social-icon" href="#"><i class="icon icon-youtube">Youtube</i></a>
+			<div class="footer-container footer-social">
+				<a class="social-icon" href="#"><i class="icon-twitter"></i></a>
+				<a class="social-icon" href="#"><i class="icon-facebook"></i></a>
+				<a class="social-icon" href="#"><i class="icon-youtube"></i></a>
 			</div>
-			<div class="footer-copyright">
-				<p>website by</p>
-				<a class="footer-logo" href="#"><img src="http://placehold.it/135x33" width="135" height="33" alt="HTML Academy"></a>
+			<div class="footer-container footer-copyright">
+				<span class="text-dark">website by</span>
+				<a class="footer-logo" href="#"></a>
 			</div>
 		</footer>
 		
 	</div>
-	
 </body>
 </html>
