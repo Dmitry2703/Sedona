@@ -24,113 +24,140 @@
 				</ul>
 			</nav>
 		</header>
-		
 		<main>
-			<div class="container">
-				<div class="filter cl">
+			<div class="filter cl">
+				<div class="container">
 					<form action="/" method="post">
-						<div class="filter-column1">
-							<fieldset class="filter-fieldset">
+						<div class="filter-column-left pull-left">
+							<fieldset>
 								<legend class="title-small title-light">Инфраструктура:</legend>
 								<input id="checkbox-item1" type="checkbox" name="checkbox-item1" checked>
-								<label class="text-light" for="checkbox-item1">Бассейн</label><br>
+								<label class="text-light" for="checkbox-item1">Бассейн</label>
 								<input id="checkbox-item2" type="checkbox" name="checkbox-item2">
-								<label class="text-light" for="checkbox-item2">Парковка</label><br>
+								<label class="text-light" for="checkbox-item2">Парковка</label>
 								<input id="checkbox-item3" type="checkbox" name="checkbox-item3">
 								<label class="text-light" for="checkbox-item3">Wi-Fi</label>
 							</fieldset>
-							<fieldset class="filter-fieldset">
+							<fieldset>
 								<legend class="title-small title-light">Тип жилья:</legend>
 								<input id="checkbox-item4" type="checkbox" name="checkbox-item4" checked>
-								<label class="text-light" for="checkbox-item4">Гостиница</label><br>
+								<label class="text-light" for="checkbox-item4">Гостиница</label>
 								<input id="checkbox-item5" type="checkbox" name="checkbox-item5" checked>
-								<label class="text-light" for="checkbox-item5">Мотель</label><br>
+								<label class="text-light" for="checkbox-item5">Мотель</label>
 								<input id="checkbox-item6" type="checkbox" name="checkbox-item6" checked>
 								<label class="text-light" for="checkbox-item6">Апартаменты</label>
 							</fieldset>
 						</div>
-						<div class="filter-column2">
+						<div class="filter-column-right pull-right">
 							<fieldset>
 								<legend class="title-small title-light">Стоимость в сутки (р):</legend>
 								<div class="range-filter">
-	            		<div class="price-controls cl">
-	                	<input class="min-price" type="text" placeholder="от 0">
-	                	<input class="max-price" type="text" placeholder="до 3000">
-	            		</div>
-	            		<div class="range-controls">
-	                	<div class="scale">
-	                		<div class="bar"></div>
-	                	</div>
-	                	<div class="toggle min-toggle"></div>
-	                	<div class="toggle max-toggle"></div>
-	            		</div>
-	        			</div>
+		          		<div class="price-controls cl">
+		              	<input class="min-price" type="text" placeholder="от 0">
+		              	<input class="max-price" type="text" placeholder="до 3000">
+		          		</div>
+		          		<div class="range-controls">
+		              	<div class="scale">
+		              		<div class="bar"></div>
+		              	</div>
+		              	<div class="toggle min-toggle"></div>
+		              	<div class="toggle max-toggle"></div>
+		          		</div>
+		      			</div>
 							</fieldset>
 							<button class="btn btn-action-clear" type="submit">Показать</button>
 						</div>
 					</form>
 				</div>
-				
-				<div class="search-result">
-					<div class="sorting-row">
-						<span class="title">Найдено: 3</span>
-						<span class="sorting-text">сортировка:</span>
-						<a class="sorting-text">По цене</a>
-						<a class="sorting-text" href="#">По типу</a>
-						<a class="sorting-text" href="#">По рейтингу</a>
-						<i class="icon icon-up-dir"></i> <!-- стрелки вверх/вниз иконочным шрифтом -->
-						<i class="icon icon-down-dir"></i>
+			</div>
+			<div class="container">
+				<div class="sorting-row">
+					<span class="title">Найдено: 3</span>
+					<span class="text-small sorting-title">сортировка:</span>
+					<ul class="sorting-list">
+						<li class="sorting-list-active"><span class="text-small">По цене</span></li>
+						<li><a class="text-small" href="#">По типу</a></li>
+						<li><a class="text-small" href="#">По рейтингу</a></li>
+					</ul>
+					<div class="sorting-arrow pull-right">
+						<i class="icon-up-dir"></i>
+						<i class="icon-down-dir sorting-arrow-active"></i>
 					</div>
-					
-					<article class="hotel-card">
-						<div class="hotel-info">
-							<img src="img/temp/hotels-photo1.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
-							<h2 class="title">AMARA RESORT &amp; SPA</h2>
-							<p>гостиница<span>от 3500 р.</span></p> 
-							<a class="btn btn-info" href="#">Подробнее</a>
-							<a class="btn btn-action" href="#">Забронировать</a>
-						</div>
-						<div class="hotel-rating">
-							<i class="icon icon-star"></i>
-							<i class="icon icon-star"></i>
-							<i class="icon icon-star"></i>
-							<i class="icon icon-star"></i>
+				</div>
+			</div>
+			<div class="hotel-row">
+				<div class="container">
+					<article class="hotel-card cl">
+						<div class="hotel-rating pull-right">
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
 							<p class="bg-muted">рейтинг: 8,5</p>
 						</div>
-					</article>
-					<article class="hotel-card">
 						<div class="hotel-info">
-							<img src="img/temp/hotels-photo2.jpg" width="135" height="90" alt="DESERT QUAIL INN">
-							<h2 class="title">DESERT QUAIL INN</h2>
-							<p>мотель<span>от 2000 р.</span></p> 
+							<a class="hotel-info-image pull-left" href="#">
+								<img src="img/temp/hotels-photo1.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+							</a>
+							<h2 class="hotel-name title"><a href="#">AMARA RESORT &amp; SPA</a></h2>
+							<div class="hotel-info-text">
+								<span class="hotel-type">гостиница</span>
+								<span>от 3500 р.</span>
+							</div> 
 							<a class="btn btn-info" href="#">Подробнее</a>
 							<a class="btn btn-action" href="#">Забронировать</a>
 						</div>
-						<div class="hotel-rating">
-							<i class="icon icon-star"></i>
-							<i class="icon icon-star"></i>
+					</article>
+				</div>
+			</div>
+			<div class="hotel-row">
+				<div class="container">
+					<article class="hotel-card cl">
+						<div class="hotel-rating pull-right">
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
 							<p class="bg-muted">рейтинг: 8,9</p>
 						</div>
-					</article>
-					<article class="hotel-card">
 						<div class="hotel-info">
-							<img src="img/temp/hotels-photo3.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
-							<h2 class="title">VILLAS AT POCO DIABLO</h2>
-							<p>апартаменты<span>от 4000 р.</span></p> 
+							<a class="hotel-info-image pull-left" href="#">
+								<img src="img/temp/hotels-photo2.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+							</a>
+							<h2 class="hotel-name title"><a href="#">DESERT QUAIL INN</a></h2>
+							<div class="hotel-info-text">
+								<span class="hotel-type">мотель</span>
+								<span>от 2000 р.</span>
+							</div> 
 							<a class="btn btn-info" href="#">Подробнее</a>
 							<a class="btn btn-action" href="#">Забронировать</a>
 						</div>
-						<div class="hotel-rating">
-							<i class="icon icon-star"></i>
-							<i class="icon icon-star"></i>
-							<i class="icon icon-star"></i>
+					</article>
+				</div>
+			</div>
+			<div class="hotel-row">
+				<div class="container">
+					<article class="hotel-card cl">
+						<div class="hotel-rating pull-right">
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
 							<p class="bg-muted">рейтинг: 9,2</p>
+						</div>
+						<div class="hotel-info">
+							<a class="hotel-info-image pull-left" href="#">
+								<img src="img/temp/hotels-photo3.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+							</a>
+							<h2 class="hotel-name title"><a href="#">VILLAS AT POCO DIABLO</a></h2>
+							<div class="hotel-info-text">
+								<span class="hotel-type">апартаменты</span>
+								<span>от 4000 р.</span>
+							</div> 
+							<a class="btn btn-info" href="#">Подробнее</a>
+							<a class="btn btn-action" href="#">Забронировать</a>
 						</div>
 					</article>
 				</div>
 			</div>
 		</main>
-		
 		<footer class="page-footer cl">
 			<div class="footer-container footer-instagram">
 				<a class="title" href="#">#visitsedona</a>
@@ -145,8 +172,6 @@
 				<a class="footer-logo" href="#"></a>
 			</div>
 		</footer>
-		
 	</div>
-	
 </body>
 </html>
