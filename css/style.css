@@ -466,7 +466,7 @@ body {
 .search p { margin-bottom: 44px; }
 
 .btn-search {
-	width: 568px;
+	min-width: 568px;
 	font-size: 21px;
 	line-height: 86px;
 	color: #fff;
@@ -745,7 +745,7 @@ body {
 
 .btn-action-clear {
 	display: block;
-	width: 133px;
+	min-width: 133px;
 	margin: 0 auto;
 	font-weight: normal;
 	line-height: 32px;
@@ -795,17 +795,19 @@ body {
 .sorting-arrow {
 	position: relative;
 	top: 3px;
-	right: -3px;
+	right: -4px;
 	font-size: 23px;
 	line-height: 23px;
 	color: #ccc;
 }
 
-.sorting-arrow .icon-up-dir,
-.sorting-arrow .icon-down-dir {
-	margin-right: -3px;
-	cursor: pointer;
+.sorting-row .icon-up-dir {
+	position: absolute;
+	left: -22px;
 }
+
+.sorting-arrow .icon-up-dir,
+.sorting-arrow .icon-down-dir { cursor: pointer; }
 
 .sorting-arrow .icon-up-dir:hover,
 .sorting-arrow .icon-down-dir:hover { color: #000; }
@@ -858,17 +860,21 @@ body {
 
 .btn-info, 
 .btn-action {
-	padding: 0 17px;
 	line-height: 27px;
 	color: #fff;
+	text-align: center;
 }
 
 .btn-info	{
+	min-width: 110px;
 	margin-right: 1px;
 	background-color: #81b3d2;
 }
 
-.btn-action	{ background-color: #766357; }
+.btn-action	{ 
+	min-width: 142px;
+	background-color: #766357; 
+}
 
 .btn-info:hover { background-color: #669ec0; }
 
