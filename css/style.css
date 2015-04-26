@@ -497,10 +497,9 @@ body {
 .button-shift { margin-right: 3px; }
 
 .search-row input {
-	padding-top: 0;
-	padding-bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 15px;
-	line-height: 38px;
 	border: none;
 	outline: none;
 	background-color: #f2f2f2;
@@ -561,7 +560,6 @@ body {
 .icon-calendar:active,
 .icon-minus:active,
 .icon-plus:active { color: #81b3d2; }
-
 
 ::-webkit-input-placeholder { color:#000; }
 ::-moz-placeholder          { color:#000; } /* Firefox 19+ */
@@ -726,14 +724,17 @@ body {
 
 .price-controls input {
 	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 50%;
 	margin: 0;
-	padding: 0;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	border: none;
 	background-color: transparent;
 	outline: none;
 	color: #fff;
-	line-height: 32px;
 	text-transform: uppercase;
 	text-align: center;
 }
