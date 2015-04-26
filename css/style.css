@@ -66,7 +66,6 @@
 .icon-minus:before { content: '\e802'; } /* '' */
 .icon-youtube:before { content: '\f39e'; } /* '' */
 
-
 /*
 		HELPER CLASSES
 */
@@ -80,6 +79,8 @@
 .pull-right { float: right; }
 
 .pull-left { float: left; }
+
+.text-hide { font-size: 0; }
 
 /*
 		GRID
@@ -107,7 +108,7 @@ html, body {
 */
 
 body {
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: PT Sans, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
@@ -121,7 +122,6 @@ body {
 	line-height: 26px;
 	font-weight: bold;
 	color: #000;
-	text-transform: uppercase;
 }
 
 .title-muted { 
@@ -132,24 +132,24 @@ body {
 
 .title-light { color: #fff; }
 
-.text-light { color: #fff; }
-
-.text-dark { color: #000; }
-
 .title-big {
 	font-size: 30px;
 	line-height: 30px;
 }
 
+.title-small {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.text-light { color: #fff; }
+
+.text-dark { color: #000; }
+
 .text-high { line-height: 24px; }
 
 .text-bold {
 	line-height: 26px;
-	font-weight: bold;
-}
-
-.title-small {
-	font-size: 16px;
 	font-weight: bold;
 }
 
@@ -210,11 +210,10 @@ body {
 .btn {
 	display: inline-block;
 	vertical-align: top;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: PT Sans, Arial, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-	white-space: nowrap;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -466,9 +465,10 @@ body {
 .search p { margin-bottom: 44px; }
 
 .btn-search {
-	min-width: 568px;
+	width: 568px;
+	padding-top: 32px;
+	padding-bottom: 33px;
 	font-size: 21px;
-	line-height: 86px;
 	color: #fff;
 	background-color: #766357;
 }
@@ -490,7 +490,10 @@ body {
 
 .search-col { width: 50%; }
 
-.search-row label { line-height: 38px; }
+.search-row label { 
+	max-width: 100px;
+	line-height: 38px; 
+}
 
 .label-shift { margin-left: 50px; }
 
@@ -499,7 +502,6 @@ body {
 .search-row input {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 15px;
 	border: none;
 	outline: none;
 	background-color: #f2f2f2;
@@ -512,38 +514,58 @@ body {
 .search-row button {
 	display: inline-block;
 	vertical-align: top;
-	padding-top: 0;
-	padding-bottom: 0;
-	width: 38px;
-	height: 38px;
 	border: none;
 	outline: none;
-	background-color: #f2f2f2;
+	background-color: transparent;
 }
 
+.input-date-container { position: relative; }
+
 .input-date {
-	width: 293px;
-	margin-right: -4px;
+	width: 291px;
+	padding-left: 15px;
+	padding-right: 40px;
 }
 
 .icon-calendar {
+	position: absolute;
+	top: 8px;
+	right: 3px;
 	font-size: 21px;
 	color: #c2c2c2;
 }
 
+.input-amount-container { position: relative; }
+
+.container-shift { 
+	position: relative;
+	left: -3px;
+}
+
 .input-amount {
-	width: 23px;
-	margin-left: -4px;
-	margin-right: -4px;
+	width: 54px;
+	padding-left: 30px;
+	padding-right: 30px;
 	border: none;
 	outline: none;
-	background-color: #f2f2f2;
+	text-align: center;
 }
 
 .icon-minus,
 .icon-plus {
+	position: absolute;
 	font-size: 14px;
 	color: #a9a9a9;
+}
+
+.icon-minus {
+	top: 8px;
+	left: 5px;
+}
+
+.icon-plus {
+	top: 8px;
+	right: 4px;
 }
 
 .search-row input:hover { background-color: #ebebeb; }
@@ -658,7 +680,9 @@ body {
 	color: #b5b5b5;
 }
 
-.filter input[type="checkbox"]:checked + label::before { content: '\2611'; }
+.filter input[type="checkbox"]:checked + label::before, 
+.filter input[type="checkbox"] + label:active::before { content: '\2611'; }
+
 
 .filter input[type="checkbox"] + label:hover,
 .filter input[type="checkbox"] + label:hover::before { 
@@ -746,13 +770,24 @@ body {
 
 .btn-action-clear {
 	display: block;
-	min-width: 133px;
+	min-width: 137px;
+	padding-top: 6px;
+	padding-bottom: 5px;
 	margin: 0 auto;
 	font-weight: normal;
-	line-height: 32px;
 	border: 2px solid #fff;
 	background-color: transparent;
 	color: #fff;
+}
+
+.btn-action-clear:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+.btn-action-clear:active {
+	color: #ccc;
+	background-color: #fff;
 }
 
 /* Sorting row */
@@ -797,18 +832,18 @@ body {
 	position: relative;
 	top: 3px;
 	right: -4px;
+}
+
+.sorting-arrow a {
 	font-size: 23px;
 	line-height: 23px;
 	color: #ccc;
 }
 
-.sorting-row .icon-up-dir {
+.sorting-arrow .icon-up-dir {
 	position: absolute;
 	left: -22px;
 }
-
-.sorting-arrow .icon-up-dir,
-.sorting-arrow .icon-down-dir { cursor: pointer; }
 
 .sorting-arrow .icon-up-dir:hover,
 .sorting-arrow .icon-down-dir:hover { color: #000; }
@@ -855,8 +890,8 @@ body {
 }
 
 .hotel-type { 
-	width: 112px; 
-	overflow: hidden;
+	min-width: 110px; 
+	padding-right: 2px;
 }
 
 .btn-info, 
@@ -894,6 +929,7 @@ body {
 .hotel-info-image {
 	position: relative;
 	top: 5px;
+	float: left;
 	display: block;
 	width: 135px;
 	height: 90px;
