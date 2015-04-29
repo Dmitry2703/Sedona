@@ -487,7 +487,9 @@ body {
 	box-shadow: 0 0 15px rgba(0,1,1,.2);
 }
 
-.search-form-show { 
+.search-form-show {
+	position: absolute;
+	z-index: 10;
 	display: block; 
 	-webkit-animation: appearance .5s;
 	-o-animation: appearance .5s;
