@@ -1,12 +1,24 @@
-// Search form Appearance
+// Search form Open and Close
 
 var link = document.querySelector(".btn-search");
 var popup = document.querySelector(".search-form");
 
 link.addEventListener("click", function(event) {
-		event.preventDefault();
-		popup.classList.add("search-form-show");
-	});
+event.preventDefault();
+    if (popup.classList.contains("search-form-show")) {
+            popup.classList.remove("search-form-show");
+          }
+                      else { popup.classList.add("search-form-show");
+}
+});
+
+window.addEventListener("keydown", function(event) {
+        if (event.keyCode == 27) {
+          if (popup.classList.contains("search-form-show")) {
+            popup.classList.remove("search-form-show");
+          }
+        }
+      });
 
 // Map
 

@@ -5,7 +5,7 @@
 	<title>Седона</title>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<div class="page-wrapper">
@@ -16,7 +16,6 @@
 						<li><a href="#">Фото и видео</a></li>
 						<li class="logo-wrapper">
 							<a href="index.html">
-								<span class="text-hide">Sedona</span>
 								<img src="img/logo.png" width="138" height="70" alt="Sedona">
 							</a>
 						</li>
@@ -98,30 +97,30 @@
 					<form action="/" method="post">
 						<div class="search-row cl">
 							<label class="text-bold text-dark" for="date-arrival">Дата заезда:</label>
-							<div class="input-date-container pull-right">
+							<div class="input-date-container">
 								<input id="date-arrival" class="input-date" type="text" name="date-arrival" placeholder="24 апреля 2014">
 								<button type="button" class="icon-calendar"></button>
 							</div>
 						</div>
 						<div class="search-row cl">
 							<label class="text-bold text-dark" for="date-departure">Дата выезда:</label>
-							<div class="input-date-container pull-right">
+							<div class="input-date-container">
 								<input id="date-departure" class="input-date" type="text" name="date-departure" placeholder="4 июля 2014">
 								<button type="button" class="icon-calendar"></button>
 							</div>
 						</div>
 						<div class="search-row cl">
-							<div class="search-col pull-left">
+							<div class="search-col">
 								<label class="text-bold text-dark" for="amount-adult">Взрослые:</label>
-								<div class="input-amount-container container-shift pull-right">
+								<div class="input-amount-container container-shift">
 									<button type="button" class="icon-minus"></button>
 									<input id="amount-adult" class="input-amount" type="text" name="amount-adult" placeholder="2">
 									<button type="button" class="icon-plus button-shift"></button>
 								</div>
 							</div>
-							<div class="search-col pull-left">
+							<div class="search-col">
 								<label class="text-bold text-dark label-shift" for="amount-children">Дети:</label>
-								<div class="input-amount-container pull-right">
+								<div class="input-amount-container">
 									<button type="button" class="icon-minus"></button>
 									<input id="amount-children" class="input-amount" type="text" name="amount-children" placeholder="0">
 									<button type="button" class="icon-plus"></button>
@@ -139,17 +138,17 @@
 				<a class="title" href="#">#visitsedona</a>
 			</div>
 			<div class="footer-container footer-social">
-				<a class="social-icon" href="#"><i class="icon-twitter"><span class="text-hide">twitter</span></i></a>
-				<a class="social-icon" href="#"><i class="icon-facebook"><span class="text-hide">facebook</span></i></a>
-				<a class="social-icon" href="#"><i class="icon-youtube"><span class="text-hide">youtube</span></i></a>
+				<a class="social-icon text-hide-icon" href="#"><i class="icon-twitter"></i>twitter</a>
+				<a class="social-icon text-hide-icon" href="#"><i class="icon-facebook">facebook</i></a>
+				<a class="social-icon text-hide-icon" href="#"><i class="icon-youtube">youtube</i></a>
 			</div>
 			<div class="footer-container footer-copyright">
 				<span class="text-dark">website by</span>
-				<a class="footer-logo" href="#"><span class="text-hide">HTML academy</span></a>
+				<a class="footer-logo text-hide" href="#">HTML academy</a>
 			</div>
 		</footer>
 	</div>
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBVgf3xfFdFI0P6dG-MR2WP3HjLx6Be1Zo&amp;sensor=false"></script>
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>

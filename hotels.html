@@ -5,7 +5,7 @@
 	<title>Поиск отелей в Седоне</title>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<div class="page-wrapper">
@@ -15,8 +15,7 @@
 					<li><a href="index.html">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li class="logo-wrapper">
-							<a class="text-hide" href="index.html">
-								<span class="text-hide">Sedona</span>
+							<a href="index.html">
 								<img src="img/logo.png" width="138" height="70" alt="Sedona">
 							</a>
 						</li>
@@ -29,7 +28,7 @@
 			<div class="filter cl">
 				<div class="container">
 					<form action="/" method="post">
-						<div class="filter-column-left pull-left">
+						<div class="filter-column-left">
 							<fieldset class="pull-left">
 								<legend class="title-small title-light">Инфраструктура:</legend>
 								<input id="checkbox-item1" type="checkbox" name="checkbox-item1" checked>
@@ -49,7 +48,7 @@
 								<label class="text-light" for="checkbox-item6">Апартаменты</label>
 							</fieldset>
 						</div>
-						<div class="filter-column-right pull-right">
+						<div class="filter-column-right">
 							<fieldset>
 								<legend class="title-small title-light">Стоимость в сутки (р):</legend>
 								<div class="range-filter">
@@ -80,81 +79,87 @@
 						<li><a class="text-small" href="#">По типу</a></li>
 						<li><a class="text-small" href="#">По рейтингу</a></li>
 					</ul>
-					<div class="sorting-arrow pull-right">
-						<a href="#"><i class="icon-up-dir"></i></a>
-						<a href="#"><i class="icon-down-dir sorting-arrow-active"></i></a>
+					<div class="sorting-arrow">
+						<a class="icon-up-dir text-hide-icon" href="#">вверх</a>
+						<a class="icon-down-dir text-hide-icon sorting-arrow-active" href="#">вниз</a>
 					</div>
 				</div>
 			</div>
 			<div class="hotel-row">
 				<div class="container">
 					<article class="hotel-card cl">
-						<div class="hotel-rating pull-right">
-							<i class="icon-star"></i>
-							<i class="icon-star"></i>
-							<i class="icon-star"></i>
-							<i class="icon-star"></i>
-							<p class="bg-muted">рейтинг: 8,5</p>
-						</div>
-						<div class="hotel-info">
-							<a class="hotel-info-image pull-left" href="#">
-								<img src="img/temp/hotels-photo1.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
-							</a>
-							<h2 class="hotel-name title"><a href="#">AMARA RESORT &amp; SPA</a></h2>
-							<div class="hotel-info-text">
-								<span class="hotel-type">гостиница</span>
-								<span>от 3500 р.</span>
-							</div> 
-							<a class="btn btn-info" href="#">Подробнее</a>
-							<a class="btn btn-action" href="#">Забронировать</a>
-						</div>
+					  <div class="hotel-rating">
+					    <i class="icon-star text-hide-icon">*</i>
+					    <i class="icon-star text-hide-icon">*</i>
+					    <i class="icon-star text-hide-icon">*</i>
+					    <i class="icon-star text-hide-icon">*</i>
+					    <p class="bg-muted">рейтинг: 8,5</p>
+					  </div>
+					  <div class="hotel-image-container">
+					    <a class="hotel-image" href="#">
+					      <img src="img/temp/hotels-photo1.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+					    </a>
+					  </div>
+					  <div class="hotel-info">
+					    <h2 class="hotel-name title"><a href="#">AMARA RESORT &amp; SPA</a></h2>
+					    <div class="hotel-description">
+					      <span class="hotel-type">гостиница</span>
+					      <span>от 3500 р.</span>
+					    </div> 
+					    <a class="btn btn-info" href="#">Подробнее</a>
+					    <a class="btn btn-action" href="#">Забронировать</a>
+					  </div>
 					</article>
 				</div>
 			</div>
 			<div class="hotel-row">
 				<div class="container">
 					<article class="hotel-card cl">
-						<div class="hotel-rating pull-right">
-							<i class="icon-star"></i>
-							<i class="icon-star"></i>
+					  <div class="hotel-rating">
+					    <i class="icon-star text-hide-icon">*</i>
+							<i class="icon-star text-hide-icon">*</i>
 							<p class="bg-muted">рейтинг: 8,9</p>
-						</div>
-						<div class="hotel-info">
-							<a class="hotel-info-image pull-left" href="#">
-								<img src="img/temp/hotels-photo2.jpg" width="135" height="90" alt="DESERT QUAIL INN">
-							</a>
-							<h2 class="hotel-name title"><a href="#">DESERT QUAIL INN</a></h2>
-							<div class="hotel-info-text">
-								<span class="hotel-type">мотель</span>
-								<span>от 2000 р.</span>
-							</div> 
-							<a class="btn btn-info" href="#">Подробнее</a>
-							<a class="btn btn-action" href="#">Забронировать</a>
-						</div>
+					  </div>
+					  <div class="hotel-image-container">
+					    <a class="hotel-image" href="#">
+					      <img src="img/temp/hotels-photo2.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+					    </a>
+					  </div>
+					  <div class="hotel-info">
+					    <h2 class="hotel-name title"><a href="#">DESERT QUAIL INN</a></h2>
+					    <div class="hotel-description">
+					      <span class="hotel-type">мотель</span>
+					      <span>от 2000 р.</span>
+					    </div> 
+					    <a class="btn btn-info" href="#">Подробнее</a>
+					    <a class="btn btn-action" href="#">Забронировать</a>
+					  </div>
 					</article>
 				</div>
 			</div>
 			<div class="hotel-row">
 				<div class="container">
 					<article class="hotel-card cl">
-						<div class="hotel-rating pull-right">
-							<i class="icon-star"></i>
-							<i class="icon-star"></i>
-							<i class="icon-star"></i>
+					  <div class="hotel-rating">
+					    <i class="icon-star text-hide-icon">*</i>
+							<i class="icon-star text-hide-icon">*</i>
+							<i class="icon-star text-hide-icon">*</i>
 							<p class="bg-muted">рейтинг: 9,2</p>
-						</div>
-						<div class="hotel-info">
-							<a class="hotel-info-image pull-left" href="#">
-								<img src="img/temp/hotels-photo3.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
-							</a>
-							<h2 class="hotel-name title"><a href="#">VILLAS AT POCO DIABLO</a></h2>
-							<div class="hotel-info-text">
-								<span class="hotel-type">апартаменты</span>
-								<span>от 4000 р.</span>
-							</div> 
-							<a class="btn btn-info" href="#">Подробнее</a>
-							<a class="btn btn-action" href="#">Забронировать</a>
-						</div>
+					  </div>
+					  <div class="hotel-image-container">
+					    <a class="hotel-image" href="#">
+					      <img src="img/temp/hotels-photo3.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+					    </a>
+					  </div>
+					  <div class="hotel-info">
+					    <h2 class="hotel-name title"><a href="#">VILLAS AT POCO DIABLO</a></h2>
+					    <div class="hotel-description">
+					      <span class="hotel-type">апартаменты</span>
+					      <span>от 4000 р.</span>
+					    </div> 
+					    <a class="btn btn-info" href="#">Подробнее</a>
+					    <a class="btn btn-action" href="#">Забронировать</a>
+					  </div>
 					</article>
 				</div>
 			</div>
@@ -164,13 +169,13 @@
 				<a class="title" href="#">#visitsedona</a>
 			</div>
 			<div class="footer-container footer-social">
-				<a class="social-icon" href="#"><i class="icon-twitter"><span class="text-hide">twitter</span></i></a>
-				<a class="social-icon" href="#"><i class="icon-facebook"><span class="text-hide">facebook</span></i></a>
-				<a class="social-icon" href="#"><i class="icon-youtube"><span class="text-hide">youtube</span></i></a>
+				<a class="social-icon text-hide-icon" href="#"><i class="icon-twitter"></i>twitter</a>
+				<a class="social-icon text-hide-icon" href="#"><i class="icon-facebook">facebook</i></a>
+				<a class="social-icon text-hide-icon" href="#"><i class="icon-youtube">youtube</i></a>
 			</div>
 			<div class="footer-container footer-copyright">
 				<span class="text-dark">website by</span>
-				<a class="footer-logo" href="#"><span class="text-hide">HTML academy</span></a>
+				<a class="footer-logo text-hide" href="#">HTML academy</a>
 			</div>
 		</footer>
 	</div>
